@@ -173,8 +173,10 @@ name = "eurostat-project"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "pandas" },
     { name = "polars" },
     { name = "psycopg2-binary" },
+    { name = "pyjstat" },
     { name = "requests" },
     { name = "sqlalchemy" },
     { name = "streamlit" },
@@ -182,8 +184,10 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "pandas" },
     { name = "polars", specifier = ">=1.39.2" },
     { name = "psycopg2-binary", specifier = ">=2.9.11" },
+    { name = "pyjstat" },
     { name = "requests", specifier = ">=2.32.5" },
     { name = "sqlalchemy", specifier = ">=2.0.48" },
     { name = "streamlit", specifier = ">=1.55.0" },
@@ -777,6 +781,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/a1/ca/40e14e196864a0f61
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ab/4c/b888e6cf58bd9db9c93f40d1c6be8283ff49d88919231afe93a6bcf61626/pydeck-0.9.1-py2.py3-none-any.whl", hash = "sha256:b3f75ba0d273fc917094fa61224f3f6076ca8752b93d46faf3bcfd9f9d59b038", size = 6900403, upload-time = "2024-05-10T15:36:17.36Z" },
 ]
+
+[[package]]
+name = "pyjstat"
+version = "2.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pandas" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/62/25/a78cb7492a5482f0aa627189d2a58aa030ef419c36568cd8eb8581ab3451/pyjstat-2.4.0.tar.gz", hash = "sha256:dd7fc7b4ed0892fb949ff87eeea3e2c838754eef43922b40ba3c38fadfc30795", size = 798030, upload-time = "2023-03-31T12:29:47.997Z" }
 
 [[package]]
 name = "python-dateutil"

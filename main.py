@@ -1,6 +1,4 @@
-def main():
-    print("Hello from eurostat-project!")
-
+from src.ingestion.eurostat import run
 
 if __name__ == "__main__":
-    main()
+    run()

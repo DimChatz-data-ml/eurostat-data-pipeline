@@ -12,4 +12,5 @@ dependencies = [
     "streamlit>=1.55.0",
     "pyjstat",
     "pandas",
+    "python-dotenv>=1.2.2",
 ]

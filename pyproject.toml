@@ -13,4 +13,5 @@ dependencies = [
     "pyjstat",
     "pandas",
     "python-dotenv>=1.2.2",
+    "dbt-postgres>=1.10.0",
 ]

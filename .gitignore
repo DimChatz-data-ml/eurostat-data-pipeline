@@ -4,3 +4,7 @@ __pycache__/
 # Logs
 *.log
 ingestion.log
+
+# dbt artifacts
+target/
+dbt_packages/

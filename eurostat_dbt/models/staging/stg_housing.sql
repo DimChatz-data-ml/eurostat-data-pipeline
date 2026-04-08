@@ -3,8 +3,7 @@
 WITH source AS (
     -- Βήμα 1: Διαβάζουμε τα raw data
     SELECT * 
-    FROM raw_housing
-),
+    FROM {{ source('raw', 'raw_housing') }}),
 
 filtered AS (
     -- Βήμα 2: Φιλτράρουμε
